@@ -13,8 +13,10 @@
 		BF5A48FB2427460A00EEB7B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5A48FA2427460A00EEB7B6 /* Assets.xcassets */; };
 		BF5A48FE2427460A00EEB7B6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5A48FD2427460A00EEB7B6 /* Preview Assets.xcassets */; };
 		BF5A49012427460A00EEB7B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5A48FF2427460A00EEB7B6 /* LaunchScreen.storyboard */; };
-		BF5A490C2427460A00EEB7B6 /* StockAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A490B2427460A00EEB7B6 /* StockAnalyticsTests.swift */; };
 		BF5A49172427460A00EEB7B6 /* StockAnalyticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A49162427460A00EEB7B6 /* StockAnalyticsUITests.swift */; };
+		BF5A492E242746CF00EEB7B6 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4926242746CF00EEB7B6 /* Development.xcconfig */; };
+		BF5A492F242746CF00EEB7B6 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4927242746CF00EEB7B6 /* Production.xcconfig */; };
+		BF5A4930242746CF00EEB7B6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A4928242746CF00EEB7B6 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +46,13 @@
 		BF5A49002427460A00EEB7B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5A49022427460A00EEB7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5A49072427460A00EEB7B6 /* StockAnalyticsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockAnalyticsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF5A490B2427460A00EEB7B6 /* StockAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAnalyticsTests.swift; sourceTree = "<group>"; };
 		BF5A490D2427460A00EEB7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5A49122427460A00EEB7B6 /* StockAnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StockAnalyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A49162427460A00EEB7B6 /* StockAnalyticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAnalyticsUITests.swift; sourceTree = "<group>"; };
 		BF5A49182427460A00EEB7B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5A4926242746CF00EEB7B6 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		BF5A4927242746CF00EEB7B6 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		BF5A4928242746CF00EEB7B6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF5791852427543000065BF3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BF5791862427543100065BF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF5791872427543100065BF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BF5791882427543400065BF3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BF5A48E82427460700EEB7B6 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +131,18 @@
 		BF5A48F32427460700EEB7B6 /* StockAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A49022427460A00EEB7B6 /* Info.plist */,
 				BF5A48F42427460700EEB7B6 /* AppDelegate.swift */,
 				BF5A48F62427460700EEB7B6 /* SceneDelegate.swift */,
-				BF5A48F82427460700EEB7B6 /* ContentView.swift */,
-				BF5A48FA2427460A00EEB7B6 /* Assets.xcassets */,
+				BF5A492D242746CF00EEB7B6 /* Extensions */,
 				BF5A48FF2427460A00EEB7B6 /* LaunchScreen.storyboard */,
-				BF5A49022427460A00EEB7B6 /* Info.plist */,
+				BF5A4929242746CF00EEB7B6 /* Models */,
 				BF5A48FC2427460A00EEB7B6 /* Preview Content */,
+				BF5A4924242746CE00EEB7B6 /* Repositories */,
+				BF5A492A242746CF00EEB7B6 /* Resources */,
+				BF5A492C242746CF00EEB7B6 /* ViewModels */,
+				BF5A4932242746D600EEB7B6 /* Views */,
+				BF5A4925242746CF00EEB7B6 /* XCode Configurations */,
 			);
 			path = StockAnalytics;
 			sourceTree = "<group>";
@@ -121,8 +158,11 @@
 		BF5A490A2427460A00EEB7B6 /* StockAnalyticsTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF5A490B2427460A00EEB7B6 /* StockAnalyticsTests.swift */,
 				BF5A490D2427460A00EEB7B6 /* Info.plist */,
+				BF5791862427543100065BF3 /* Models */,
+				BF5791852427543000065BF3 /* Repositories */,
+				BF5791872427543100065BF3 /* ViewModels */,
+				BF5791882427543400065BF3 /* Views */,
 			);
 			path = StockAnalyticsTests;
 			sourceTree = "<group>";
@@ -136,6 +176,60 @@
 			path = StockAnalyticsUITests;
 			sourceTree = "<group>";
 		};
+		BF5A4924242746CE00EEB7B6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BF5A4925242746CF00EEB7B6 /* XCode Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A4926242746CF00EEB7B6 /* Development.xcconfig */,
+				BF5A4927242746CF00EEB7B6 /* Production.xcconfig */,
+				BF5A4928242746CF00EEB7B6 /* Configuration.swift */,
+			);
+			path = "XCode Configurations";
+			sourceTree = "<group>";
+		};
+		BF5A4929242746CF00EEB7B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF5A492A242746CF00EEB7B6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A48FA2427460A00EEB7B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF5A492C242746CF00EEB7B6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BF5A492D242746CF00EEB7B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF5A4932242746D600EEB7B6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF5A48F82427460700EEB7B6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +240,7 @@
 				BF5A48ED2427460700EEB7B6 /* Sources */,
 				BF5A48EE2427460700EEB7B6 /* Frameworks */,
 				BF5A48EF2427460700EEB7B6 /* Resources */,
+				BF5A49332427478F00EEB7B6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,7 +336,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5A49012427460A00EEB7B6 /* LaunchScreen.storyboard in Resources */,
+				BF5A492F242746CF00EEB7B6 /* Production.xcconfig in Resources */,
 				BF5A48FE2427460A00EEB7B6 /* Preview Assets.xcassets in Resources */,
+				BF5A492E242746CF00EEB7B6 /* Development.xcconfig in Resources */,
 				BF5A48FB2427460A00EEB7B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +359,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF5A49332427478F00EEB7B6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF5A48ED2427460700EEB7B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -269,6 +386,7 @@
 			files = (
 				BF5A48F52427460700EEB7B6 /* AppDelegate.swift in Sources */,
 				BF5A48F72427460700EEB7B6 /* SceneDelegate.swift in Sources */,
+				BF5A4930242746CF00EEB7B6 /* Configuration.swift in Sources */,
 				BF5A48F92427460700EEB7B6 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,7 +395,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5A490C2427460A00EEB7B6 /* StockAnalyticsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +549,7 @@
 		};
 		BF5A491C2427460A00EEB7B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5A4926242746CF00EEB7B6 /* Development.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +570,7 @@
 		};
 		BF5A491D2427460A00EEB7B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5A4927242746CF00EEB7B6 /* Production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

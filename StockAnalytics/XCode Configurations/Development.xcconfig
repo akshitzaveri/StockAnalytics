@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  StockAnalytics
+//
+//  Created by Akshit Zaveri on 20/03/20.
+//  Copyright © 2020 Akshit Zaveri. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_NAME = $(inherited) β
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Beta
