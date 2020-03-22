@@ -1,0 +1,18 @@
+custom_rules:
+  auto_generated_leftovers:
+    regex: 'func [^\n]*\{\n(\s*super\.[^\n]*\n(\s*\/\/[^\n]*\n)*|(\s*\/\/[^\n]*\n)+)\s*\}'
+    message: "Delete auto-generated functions that you don't use"
+
+  numbers_smell:
+    regex: '(return |case |\w\(|: |\?\? |\, |== |<=? |>=? |\+= |\-= |\/= |\*= |%= |\w\.\w+ = )\(*\d{2,}'
+    message: "Numbers smell; define a constant instead."
+
+  already_true:
+    regex: "== true"
+    message: "Don't compare to true, just use the bool value."
+
+  already_bool:
+    regex: "== false"
+    message: "Don't compare to false, just use !value."
+
+  
