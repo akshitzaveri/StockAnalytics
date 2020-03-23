@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BF57918B242780D600065BF3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57918A242780D600065BF3 /* SearchBar.swift */; };
+		BF579197242897B300065BF3 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF579196242897B300065BF3 /* Stock.swift */; };
+		BF57919924289A4100065BF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57919824289A4100065BF3 /* Constants.swift */; };
+		BF57919B24289DBB00065BF3 /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57919A24289DBB00065BF3 /* StockTests.swift */; };
 		BF5A48F52427460700EEB7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A48F42427460700EEB7B6 /* AppDelegate.swift */; };
 		BF5A48F72427460700EEB7B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A48F62427460700EEB7B6 /* SceneDelegate.swift */; };
 		BF5A48F92427460700EEB7B6 /* SearchStockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A48F82427460700EEB7B6 /* SearchStockView.swift */; };
@@ -39,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		BF57918A242780D600065BF3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		BF579196242897B300065BF3 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		BF57919824289A4100065BF3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF57919A24289DBB00065BF3 /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
 		BF5A48F12427460700EEB7B6 /* StockAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A48F42427460700EEB7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5A48F62427460700EEB7B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,7 @@
 		BF5791862427543100065BF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF57919A24289DBB00065BF3 /* StockTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				BF5A490D2427460A00EEB7B6 /* Info.plist */,
+				BF57919824289A4100065BF3 /* Constants.swift */,
 				BF5791862427543100065BF3 /* Models */,
 				BF5791852427543000065BF3 /* Repositories */,
 				BF5791872427543100065BF3 /* ViewModels */,
@@ -207,6 +215,7 @@
 		BF5A4929242746CF00EEB7B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF579196242897B300065BF3 /* Stock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +322,7 @@
 					};
 					BF5A49062427460A00EEB7B6 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = BF5A48F02427460700EEB7B6;
 					};
 					BF5A49112427460A00EEB7B6 = {
@@ -398,6 +408,7 @@
 				BF5A48F52427460700EEB7B6 /* AppDelegate.swift in Sources */,
 				BF5A48F72427460700EEB7B6 /* SceneDelegate.swift in Sources */,
 				BF57918B242780D600065BF3 /* SearchBar.swift in Sources */,
+				BF579197242897B300065BF3 /* Stock.swift in Sources */,
 				BF5A4930242746CF00EEB7B6 /* Configuration.swift in Sources */,
 				BF5A48F92427460700EEB7B6 /* SearchStockView.swift in Sources */,
 			);
@@ -407,6 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF57919B24289DBB00065BF3 /* StockTests.swift in Sources */,
+				BF57919924289A4100065BF3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +619,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G977HV28A;
 				INFOPLIST_FILE = StockAnalyticsTests/Info.plist;
@@ -617,6 +631,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.akshit.StockAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockAnalytics.app/StockAnalytics";
@@ -628,6 +644,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G977HV28A;
 				INFOPLIST_FILE = StockAnalyticsTests/Info.plist;
@@ -639,6 +656,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.akshit.StockAnalyticsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StockAnalytics.app/StockAnalytics";
