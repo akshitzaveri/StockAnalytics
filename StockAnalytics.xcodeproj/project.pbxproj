@@ -21,6 +21,8 @@
 		BF5A492E242746CF00EEB7B6 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4926242746CF00EEB7B6 /* Development.xcconfig */; };
 		BF5A492F242746CF00EEB7B6 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4927242746CF00EEB7B6 /* Production.xcconfig */; };
 		BF5A4930242746CF00EEB7B6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A4928242746CF00EEB7B6 /* Configuration.swift */; };
+		BFE7433F2429DD76004DCF9F /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7433E2429DD76004DCF9F /* ConfigurationTests.swift */; };
+		BFE743432429E057004DCF9F /* DevelopmentMock.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		BF5A4926242746CF00EEB7B6 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		BF5A4927242746CF00EEB7B6 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		BF5A4928242746CF00EEB7B6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		BFE7433E2429DD76004DCF9F /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DevelopmentMock.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +121,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BF579189242780B900065BF3 /* UIKit controls */ = {
+		BF579189242780B900065BF3 /* UIKit bridged controls */ = {
 			isa = PBXGroup;
 			children = (
 				BF57918A242780D600065BF3 /* SearchBar.swift */,
 			);
-			path = "UIKit controls";
+			path = "UIKit bridged controls";
 			sourceTree = "<group>";
 		};
 		BF5A48E82427460700EEB7B6 = {
@@ -157,7 +161,7 @@
 				BF5A48FC2427460A00EEB7B6 /* Preview Content */,
 				BF5A4924242746CE00EEB7B6 /* Repositories */,
 				BF5A492A242746CF00EEB7B6 /* Resources */,
-				BF579189242780B900065BF3 /* UIKit controls */,
+				BF579189242780B900065BF3 /* UIKit bridged controls */,
 				BF5A492C242746CF00EEB7B6 /* ViewModels */,
 				BF5A4932242746D600EEB7B6 /* Views */,
 				BF5A4925242746CF00EEB7B6 /* XCode Configurations */,
@@ -182,6 +186,7 @@
 				BF5791852427543000065BF3 /* Repositories */,
 				BF5791872427543100065BF3 /* ViewModels */,
 				BF5791882427543400065BF3 /* Views */,
+				BFE7433D2429DD63004DCF9F /* XCode Configurations */,
 			);
 			path = StockAnalyticsTests;
 			sourceTree = "<group>";
@@ -205,9 +210,9 @@
 		BF5A4925242746CF00EEB7B6 /* XCode Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				BF5A4928242746CF00EEB7B6 /* Configuration.swift */,
 				BF5A4926242746CF00EEB7B6 /* Development.xcconfig */,
 				BF5A4927242746CF00EEB7B6 /* Production.xcconfig */,
-				BF5A4928242746CF00EEB7B6 /* Configuration.swift */,
 			);
 			path = "XCode Configurations";
 			sourceTree = "<group>";
@@ -248,6 +253,15 @@
 				BF5A48F82427460700EEB7B6 /* SearchStockView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BFE7433D2429DD63004DCF9F /* XCode Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				BFE7433E2429DD76004DCF9F /* ConfigurationTests.swift */,
+				BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */,
+			);
+			path = "XCode Configurations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFE743432429E057004DCF9F /* DevelopmentMock.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +435,7 @@
 			files = (
 				BF57919B24289DBB00065BF3 /* StockTests.swift in Sources */,
 				BF57919924289A4100065BF3 /* Constants.swift in Sources */,
+				BFE7433F2429DD76004DCF9F /* ConfigurationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +632,7 @@
 		};
 		BF5A491F2427460A00EEB7B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
