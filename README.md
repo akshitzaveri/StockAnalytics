@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/akshitzaveri/StockAnalytics.svg?branch=master)](https://travis-ci.org/akshitzaveri/StockAnalytics) [![codebeat badge](https://codebeat.co/badges/71dfaf82-273b-4d8a-84ae-8ce50d53f3db)](https://codebeat.co/projects/github-com-akshitzaveri-stockanalytics-sa-13-search-bar)
+
+
 # StockAnalytics
 An app which analyses a stock and tells you if it's a fundamentally good company based on balance sheet and other technical parameters.
 
