@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/akshitzaveri/StockAnalytics.svg?branch=master)](https://travis-ci.org/akshitzaveri/StockAnalytics) [![codebeat badge](https://codebeat.co/badges/71dfaf82-273b-4d8a-84ae-8ce50d53f3db)](https://codebeat.co/projects/github-com-akshitzaveri-stockanalytics-sa-13-search-bar)
+[![Build Status](https://travis-ci.org/akshitzaveri/StockAnalytics.svg?branch=development)](https://travis-ci.org/akshitzaveri/StockAnalytics) [![codebeat badge](https://codebeat.co/badges/7c8318a7-781a-480a-b418-678c6900b365)](https://codebeat.co/projects/github-com-akshitzaveri-stockanalytics-development)
 
 
 # StockAnalytics
