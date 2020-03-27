@@ -18,5 +18,25 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>stringKey</key>
+	<string>$(SERVER_URL_STRING)</string>
+	<key>integerKey</key>
+	<string>$(INT_VALUE)</string>
+	<key>floatKey</key>
+	<string>$(FLOAT_VALUE)</string>
+	<key>urlKey</key>
+	<string>$(URL_VALUE)</string>
+	<key>dataKey</key>
+	<string>$(DATA_VALUE)</string>
+	<key>dateKey</key>
+	<string>$(DATE_VALUE)</string>
+	<key>booleanTrueKey</key>
+	<string>$(BOOLEAN_TRUE_VALUE)</string>
+	<key>booleanFalseKey</key>
+	<string>$(BOOLEAN_FALSE_VALUE)</string>
+	<key>arrayKey</key>
+	<string>$(ARRAY_VALUE)</string>
+	<key>dictionaryKey</key>
+	<string>$(DICTIONARY_VALUE)</string>
 </dict>
 </plist>

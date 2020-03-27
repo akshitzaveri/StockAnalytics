@@ -25,12 +25,13 @@ struct SearchStockView: View {
           placeholder: Constants.searchBarPlaceholder
         )
         Spacer()
-      }.navigationBarTitle(Text("Search"))
+      }.navigationBarTitle("Search")
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
+
   static var previews: some View {
     SearchStockView()
   }

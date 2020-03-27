@@ -1,0 +1,6 @@
+language: swift
+os: osx
+osx_image: xcode11.3
+xcode_project: StockAnalytics.xcodeproj
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
+xcode_scheme: StockAnalytics-Development

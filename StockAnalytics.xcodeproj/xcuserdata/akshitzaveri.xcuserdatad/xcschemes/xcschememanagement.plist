@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>StockAnalytics.xcscheme_^#shared#^_</key>
+		<key>StockAnalytics-Development.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>StockAnalytics-Production.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BF5A48F02427460700EEB7B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF5A49062427460A00EEB7B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF5A49112427460A00EEB7B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
