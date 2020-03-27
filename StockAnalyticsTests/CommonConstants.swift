@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum Constants {
-  static let expectationTimeInterval: TimeInterval = 1
+enum CommonConstants {
+  static let expectationTimeoutInterval: TimeInterval = 1
 }

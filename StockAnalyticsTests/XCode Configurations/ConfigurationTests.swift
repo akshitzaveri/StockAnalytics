@@ -116,4 +116,24 @@ class ConfigurationTests: XCTestCase {
     // then
     XCTAssertFalse(result)
   }
+
+  func test_WhenInvalidValueIsRequested_ThenInvalidValueErrorIsThrown() {
+    // given
+    var result: Bool?
+
+    // when
+    do {
+      result = try Configuration.value(
+        for: Key.stringKey,
+        in: getCurrentBundle()
+      )
+    } catch Configuration.Error.invalidValue {
+      // then
+      XCTAssertNil(result)
+      XCTAssertTrue(true)
+    } catch {
+      // then
+      XCTAssertNoThrow(Configuration.Error.invalidValue)
+    }
+  }
 }

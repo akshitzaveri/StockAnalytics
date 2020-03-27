@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF57918B242780D600065BF3 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57918A242780D600065BF3 /* SearchBar.swift */; };
 		BF579197242897B300065BF3 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF579196242897B300065BF3 /* Stock.swift */; };
-		BF57919924289A4100065BF3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57919824289A4100065BF3 /* Constants.swift */; };
+		BF57919924289A4100065BF3 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57919824289A4100065BF3 /* CommonConstants.swift */; };
 		BF57919B24289DBB00065BF3 /* StockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF57919A24289DBB00065BF3 /* StockTests.swift */; };
 		BF5A48F52427460700EEB7B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A48F42427460700EEB7B6 /* AppDelegate.swift */; };
 		BF5A48F72427460700EEB7B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A48F62427460700EEB7B6 /* SceneDelegate.swift */; };
@@ -21,6 +21,8 @@
 		BF5A492E242746CF00EEB7B6 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4926242746CF00EEB7B6 /* Development.xcconfig */; };
 		BF5A492F242746CF00EEB7B6 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BF5A4927242746CF00EEB7B6 /* Production.xcconfig */; };
 		BF5A4930242746CF00EEB7B6 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A4928242746CF00EEB7B6 /* Configuration.swift */; };
+		BF74B1D2242A8E0500EABBE2 /* URL+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74B1D1242A8E0500EABBE2 /* URL+Validation.swift */; };
+		BF74B1D4242A905900EABBE2 /* Bundle+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF74B1D3242A905900EABBE2 /* Bundle+Helpers.swift */; };
 		BFE7433F2429DD76004DCF9F /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE7433E2429DD76004DCF9F /* ConfigurationTests.swift */; };
 		BFE743432429E057004DCF9F /* DevelopmentMock.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */; };
 /* End PBXBuildFile section */
@@ -45,7 +47,7 @@
 /* Begin PBXFileReference section */
 		BF57918A242780D600065BF3 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		BF579196242897B300065BF3 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
-		BF57919824289A4100065BF3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF57919824289A4100065BF3 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
 		BF57919A24289DBB00065BF3 /* StockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTests.swift; sourceTree = "<group>"; };
 		BF5A48F12427460700EEB7B6 /* StockAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5A48F42427460700EEB7B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,8 @@
 		BF5A4926242746CF00EEB7B6 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		BF5A4927242746CF00EEB7B6 /* Production.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		BF5A4928242746CF00EEB7B6 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		BF74B1D1242A8E0500EABBE2 /* URL+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Validation.swift"; sourceTree = "<group>"; };
+		BF74B1D3242A905900EABBE2 /* Bundle+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Helpers.swift"; sourceTree = "<group>"; };
 		BFE7433E2429DD76004DCF9F /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
 		BFE743422429E057004DCF9F /* DevelopmentMock.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DevelopmentMock.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,8 +184,9 @@
 		BF5A490A2427460A00EEB7B6 /* StockAnalyticsTests */ = {
 			isa = PBXGroup;
 			children = (
+				BF74B1D3242A905900EABBE2 /* Bundle+Helpers.swift */,
 				BF5A490D2427460A00EEB7B6 /* Info.plist */,
-				BF57919824289A4100065BF3 /* Constants.swift */,
+				BF57919824289A4100065BF3 /* CommonConstants.swift */,
 				BF5791862427543100065BF3 /* Models */,
 				BF5791852427543000065BF3 /* Repositories */,
 				BF5791872427543100065BF3 /* ViewModels */,
@@ -243,6 +248,7 @@
 		BF5A492D242746CF00EEB7B6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BF74B1D1242A8E0500EABBE2 /* URL+Validation.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF74B1D2242A8E0500EABBE2 /* URL+Validation.swift in Sources */,
 				BF5A48F52427460700EEB7B6 /* AppDelegate.swift in Sources */,
 				BF5A48F72427460700EEB7B6 /* SceneDelegate.swift in Sources */,
 				BF57918B242780D600065BF3 /* SearchBar.swift in Sources */,
@@ -434,8 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF57919B24289DBB00065BF3 /* StockTests.swift in Sources */,
-				BF57919924289A4100065BF3 /* Constants.swift in Sources */,
+				BF57919924289A4100065BF3 /* CommonConstants.swift in Sources */,
 				BFE7433F2429DD76004DCF9F /* ConfigurationTests.swift in Sources */,
+				BF74B1D4242A905900EABBE2 /* Bundle+Helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
